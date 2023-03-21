@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PtmbCommLibrary.Attributes
+namespace CommonLibrary.Attributes
 {
     /// <summary>
     /// 指定列舉欄位使用的資料表類型。

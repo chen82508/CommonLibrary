@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PtmbCommLibrary.Attributes
+namespace CommonLibrary.Attributes
 {
     /// <summary>
     /// 指定欄位或屬性對應的標題內容。

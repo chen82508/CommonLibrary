@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace PtmbCommLibrary.Extensions
+namespace CommonLibrary.Extensions
 {
     /// <summary>
     /// 字串驗證的擴充方法。

@@ -1,9 +1,9 @@
-﻿using PtmbCommLibrary.Attributes;
+﻿using CommonLibrary.Attributes;
 using System;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace PtmbCommLibrary.Extensions
+namespace CommonLibrary.Extensions
 {
     /// <summary>
     /// 列舉類別的擴充方法。
@@ -21,6 +21,19 @@ namespace PtmbCommLibrary.Extensions
             if (GetAttributeSettingVal<T, CategoryAttribute>(@enum) is CategoryAttribute attr)
                 return attr.Category;
             return "CategoryAttribute的內容未設定";
+        }
+
+        /// <summary>
+        /// 取得列舉欄位設定的寬度權重。
+        /// </summary>
+        /// <typeparam name="T">列舉欄位的類別</typeparam>
+        /// <param name="enum">列舉欄位</param>
+        /// <returns>列舉欄位所指定的 <see cref="EnumColumnWidthWeightAttribute"/> 內容。</returns>
+        public static int GetEnumColumnWidthWeight<T>(this T @enum) where T : Enum
+        {
+            if (GetAttributeSettingVal<T, EnumColumnWidthWeightAttribute>(@enum) is EnumColumnWidthWeightAttribute attr)
+                return attr.Weight;
+            return 100;
         }
 
         /// <summary>

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PtmbCommLibrary.Attributes
+namespace CommonLibrary.Attributes
 {
     /// <summary>
     /// 指定列舉欄位對應的上層列舉欄位。

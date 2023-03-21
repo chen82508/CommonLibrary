@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PtmbCommLibrary.Attributes
+namespace CommonLibrary.Attributes
 {
     /// <summary>
     /// 指定列舉欄位映射到資料庫的欄位名稱。

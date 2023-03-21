@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PtmbCommLibrary.Attributes
+namespace CommonLibrary.Attributes
 {
     /// <summary>
     /// 指示列舉欄位是否為排序欄位的屬性。
